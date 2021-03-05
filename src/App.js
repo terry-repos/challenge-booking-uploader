@@ -21,7 +21,14 @@ export const App = () => {
     <div className='App'>
       <div className='App-header'>
         <Dropzone accept='.csv' onDrop={onDrop}>
-          Drag files here
+        {({getRootProps, getInputProps}) => (
+          <section>
+            <div {...getRootProps()}>
+              <input {...getInputProps()} />
+              <p>Drop some files here, or click to select files</p>
+            </div>
+          </section>
+        )}
         </Dropzone>
       </div>
       <div className='App-main'>
