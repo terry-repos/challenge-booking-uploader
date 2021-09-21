@@ -2,6 +2,10 @@
 
 A web app for uploading bookings from `.csv` files.
 
+## Versions
+
+If you would rather work with JS, use the master branch. However, if you prefer TypeScript, check out our typescript-refactor branch.
+
 ## Existing code
 
 ### Overview
